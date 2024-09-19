@@ -36,10 +36,22 @@ img {
   border-radius: 15px;
 }
 
-.blog-info .linha {
+.blog-info .titulo {
   display: flex;
   background-color: var(--Yellow);
   align-self: baseline;
   border-radius: 5px;
-  margin: 25px 25px;
+  margin: 15px 25px;
+}
+
+.blog-info .publicacao{
+  margin: 0 4px 25px 25px;
+}
+
+.fundamentos {
+  /* display: flex; */
+}
+
+.html-css {
+  /* background-color: red; */
 }
