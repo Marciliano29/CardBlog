@@ -1,26 +1,25 @@
 html {
   font-size: 62.5%;
+  font-family: "Figtree", sans-serif;
 }
 
 body {
-  display: flex;
-  width: 100vw;
   background-color: var(--Yellow);
 }
 
-.container {
+main {
   display: flex;
-  height: 100vh;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .blog-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: var(--White);
-  height: 60%;
+  max-width: 350px;
   border: 2px solid black;
   border-radius: 20px;
   box-shadow: 0.7rem 0.7rem 0 0 black;
@@ -32,7 +31,8 @@ body {
   margin-top: 20px;
 }
 
-img {
+.ilustracao {
+  width: 90%;
   border-radius: 15px;
 }
 
@@ -44,14 +44,53 @@ img {
   margin: 15px 25px;
 }
 
-.blog-info .publicacao{
+.titulo .linha {
+  display: flex;
+  font-size: 1rem;
+  margin: 7px;
+  font-weight: 900;
+}
+
+.blog-info .publicacao {
   margin: 0 4px 25px 25px;
+  font-weight: 600;
 }
 
-.fundamentos {
-  /* display: flex; */
+.fundamentos{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 15px 15px 25px;
+  justify-content: left;
 }
 
-.html-css {
-  /* background-color: red; */
+.fundamentos .html-css{
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.fundamentos .conteudo {
+  font-weight: 500;
+  max-width: 250px;
+}
+
+
+.autor{
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.autor p {
+  display: flex;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+.autor .imagem-fundador{
+  max-width: 60px;
+}
+
+:hover.html-css {
+  color: var(--Yellow);
 }
